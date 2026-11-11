@@ -6,12 +6,12 @@ const GOOGLE_API_KEY = 'AIzaSyDtDec2eE3MfA8NfM3vdeqSlyzNt-xCYZ4';
 // Their original embed order does not establish which ensemble each ID represents.
 // Confirm each name against Google Calendar > Settings > Integrate calendar.
 const sources = [
- {name:'Winterguard — rename',id:'c_600134f7b10a9f4df430df23b6bd226cfca3bbef9be0e3b7d4cb35c37976b51f@group.calendar.google.com',color:'#8E24AA'},
- {name:'Front Ensemble — rename',id:'c_0f9bc5d0c40c9875621d8f40bebb1e66d1dba408e2c0542857cd7fba91021956@group.calendar.google.com',color:'#8E24AA'},
- {name:'Battery — rename',id:'c_11cd3a1e57a3ed133bc859f070e7fb2e0389f03efc7664bf2004293288164ee1@group.calendar.google.com',color:'#E67C73'},
- {name:'IP Visual Ensemble — rename',id:'c_412ed2a03dcff1989c084d241e5c931fa6f3d885797d1ea652e5ee9dd279505e@group.calendar.google.com',color:'#7CB342'},
- {name:'Jazz Ensemble — rename',id:'c_bidtkhei3eadukult01kls1ve8@group.calendar.google.com',color:'#3F51B5'},
- {name:'Symphonic & Wind Ensemble Assessment — rename',id:'c_s44pembtsl2dgcue9rd8ga4vd8@group.calendar.google.com',color:'#D50000'}
+ {name:'Winterguard',id:'c_600134f7b10a9f4df430df23b6bd226cfca3bbef9be0e3b7d4cb35c37976b51f@group.calendar.google.com',color:'#8E24AA'},
+ {name:'Front Ensemble',id:'c_0f9bc5d0c40c9875621d8f40bebb1e66d1dba408e2c0542857cd7fba91021956@group.calendar.google.com',color:'#8E24AA'},
+ {name:'Battery',id:'c_11cd3a1e57a3ed133bc859f070e7fb2e0389f03efc7664bf2004293288164ee1@group.calendar.google.com',color:'#E67C73'},
+ {name:'IP Visual Ensemble',id:'c_412ed2a03dcff1989c084d241e5c931fa6f3d885797d1ea652e5ee9dd279505e@group.calendar.google.com',color:'#7CB342'},
+ {name:'Jazz Ensemble',id:'c_bidtkhei3eadukult01kls1ve8@group.calendar.google.com',color:'#3F51B5'},
+ {name:'Symphonic & Wind Ensemble Assessment',id:'c_s44pembtsl2dgcue9rd8ga4vd8@group.calendar.google.com',color:'#D50000'}
 ];
 const filters=document.getElementById('filters');
 const enabled=new Set(sources.map(s=>s.id));
