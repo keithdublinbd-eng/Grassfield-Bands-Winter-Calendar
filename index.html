@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grassfield Bands Calendar</title><link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.19/index.global.min.js"></script><style>:root{font-family:Arial,sans-serif;color:#171717;background:#f7f7f8}body{margin:0}.hero{background:#151515;color:white;padding:28px max(20px,calc((100vw - 1100px)/2))}.hero small{color:#ff7777;letter-spacing:2px}.hero h1{margin:8px 0}.wrap{max-width:1100px;margin:auto;padding:24px 16px}.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.filters label{display:flex;gap:6px;align-items:center;background:white;border:1px solid #ddd;border-radius:20px;padding:8px 12px;font-size:14px}.filters input{accent-color:#b50925}#calendar{background:white;border-radius:14px;padding:20px;box-shadow:0 2px 14px #0001}.fc .fc-button-primary{background:#ad0928;border-color:#ad0928}.fc .fc-button-primary:hover{background:#7e071d;border-color:#7e071d}.fc .fc-daygrid-event{border-radius:5px;padding:2px 4px}.notice{font-size:13px;color:#666;margin-top:16px}@media(max-width:600px){.hero{padding:20px}.wrap{padding:12px}#calendar{padding:8px}.fc .fc-toolbar{flex-wrap:wrap;gap:10px}.fc .fc-toolbar-title{font-size:1.15em}}</style></head><body><header class="hero"><small>GRASSFIELD HIGH SCHOOL</small><h1>Bands Calendar</h1><div>2026–2027 • Rehearsals, performances & competitions</div></header><main class="wrap"><div id="filters" class="filters"></div><div id="calendar"></div><p class="notice">Times are displayed in Eastern Time. For event questions, contact the Grassfield Bands program.</p></main><script>
 // STEP 1: Replace the placeholder below with your Google Calendar API key.
-const GOOGLE_API_KEY = 'PASTE_YOUR_GOOGLE_CALENDAR_API_KEY_HERE';
+const GOOGLE_API_KEY = 'AIzaSyDtDec2eE3MfA8NfM3vdeqSlyzNt-xCYZ4';
 // STEP 2: The IDs below are extracted from your existing six-calendar Google embed.
 // Their original embed order does not establish which ensemble each ID represents.
 // Confirm each name against Google Calendar > Settings > Integrate calendar.
 const sources = [
- {name:'Calendar 1 — rename',id:'c_600134f7b10a9f4df430df23b6bd226cfca3bbef9be0e3b7d4cb35c37976b51f@group.calendar.google.com',color:'#D50000'},
- {name:'Calendar 2 — rename',id:'c_0f9bc5d0c40c9875621d8f40bebb1e66d1dba408e2c0542857cd7fba91021956@group.calendar.google.com',color:'#039BE5'},
- {name:'Calendar 3 — rename',id:'c_11cd3a1e57a3ed133bc859f070e7fb2e0389f03efc7664bf2004293288164ee1@group.calendar.google.com',color:'#8E24AA'},
- {name:'Calendar 4 — rename',id:'c_412ed2a03dcff1989c084d241e5c931fa6f3d885797d1ea652e5ee9dd279505e@group.calendar.google.com',color:'#7CB342'},
- {name:'Calendar 5 — rename',id:'c_bidtkhei3eadukult01kls1ve8@group.calendar.google.com',color:'#E67C73'},
- {name:'Calendar 6 — rename',id:'c_s44pembtsl2dgcue9rd8ga4vd8@group.calendar.google.com',color:'#3F51B5'}
+ {name:'Winterguard — rename',id:'c_600134f7b10a9f4df430df23b6bd226cfca3bbef9be0e3b7d4cb35c37976b51f@group.calendar.google.com',color:'#8E24AA'},
+ {name:'Front Ensemble — rename',id:'c_0f9bc5d0c40c9875621d8f40bebb1e66d1dba408e2c0542857cd7fba91021956@group.calendar.google.com',color:'#8E24AA'},
+ {name:'Battery — rename',id:'c_11cd3a1e57a3ed133bc859f070e7fb2e0389f03efc7664bf2004293288164ee1@group.calendar.google.com',color:'#E67C73'},
+ {name:'IP Visual Ensemble — rename',id:'c_412ed2a03dcff1989c084d241e5c931fa6f3d885797d1ea652e5ee9dd279505e@group.calendar.google.com',color:'#7CB342'},
+ {name:'Jazz Ensemble — rename',id:'c_bidtkhei3eadukult01kls1ve8@group.calendar.google.com',color:'#3F51B5'},
+ {name:'Symphonic & Wind Ensemble Assessment — rename',id:'c_s44pembtsl2dgcue9rd8ga4vd8@group.calendar.google.com',color:'#D50000'}
 ];
 const filters=document.getElementById('filters');
 const enabled=new Set(sources.map(s=>s.id));
